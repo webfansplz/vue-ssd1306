@@ -1,0 +1,32 @@
+{
+  "name": "vue-ssd1306",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "rollup -c rollup.config.js --watch",
+    "build": "rollup -c rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webfansplz/vue-ssd1306.git"
+  },
+  "author": "webfansplz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webfansplz/vue-ssd1306/issues"
+  },
+  "homepage": "https://github.com/webfansplz/vue-ssd1306#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@rollup/plugin-replace": "^2.3.4",
+    "@vue/compiler-sfc": "^3.0.3",
+    "@vue/runtime-core": "^3.0.2",
+    "rollup": "^2.33.3",
+    "rollup-plugin-vue": "^6.0.0"
+  },
+  "dependencies": {
+    "vue": "3.0.3"
+  }
+}
