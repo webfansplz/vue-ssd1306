@@ -4,8 +4,9 @@
   "description": "A Vue Renderer for SSD1306 OLED chip on Raspberry Pi.",
   "main": "src/index.js",
   "scripts": {
-    "serve": "rollup -c rollup.config.js --watch",
-    "build": "rollup -c rollup.config.js"
+    "dev": "rollup -c rollup.config.js --watch",
+    "build": "rollup -c rollup.config.js",
+    "serve": "sudo node dist/app.js"
   },
   "keywords": [
     "vue",
