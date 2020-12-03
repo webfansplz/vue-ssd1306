@@ -2,6 +2,14 @@
 
 A Vue Renderer for SSD1306 OLED chip on Raspberry Pi
 
+## Introduction
+
+This project demonstrates how to:
+
+- Use Vue together with NodeJs on Raspberry Pi.
+- Build a custom renderer for Vue.
+- Node.js driver SSD1306 OLED on Raspberry Pi.
+
 ## Getting Started
 
 This project only works on Raspberry Pi.
