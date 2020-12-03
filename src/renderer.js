@@ -1,47 +1,19 @@
-import { createRenderer } from "@vue/runtime-core";
-import { ContainerWrap } from "./container";
+import { createRenderer } from "vue";
 
-class Text {
-  constructor(parent) {
-    this.parent = parent;
-  }
-  draw(text) {
-    console.log(text);
-  }
-}
-class Pixel {
-  constructor(parent) {
-    this.parent = parent;
-  }
-  draw(text) {}
-}
-class Container {
-  constructor() {
-    this.children = [];
-  }
-  append(child) {
-    this.children.push(child);
-  }
-  update(node, text) {
-    const target = this.children.find((child) => child === node);
-    target.draw(text);
-  }
-}
+import { Text } from "./adapter";
+let uninitialized = [];
 const render = createRenderer({
   createElement(type) {
     switch (type) {
-      case "container":
-        return new Container();
       case "text":
         return new Text();
-      case "pixel":
-        return new Pixel();
     }
   },
   insert(el, parent) {
-    if (el instanceof Text || el instanceof Pixel) {
+    if (el instanceof Text) {
       el.parent = parent;
       parent.append(el);
+      uninitialized.map(({ node, text }) => el.parent.update(node, text));
     }
     return el;
   },
@@ -49,9 +21,16 @@ const render = createRenderer({
     el[key] = nextValue;
   },
   setElementText(node, text) {
-    node.parent && node.parent.update(node, text);
+    if (node.parent) {
+      console.log(text);
+      node.parent.clear(node);
+      node.parent.update(node, text);
+    } else {
+      uninitialized.push({ node, text });
+    }
   },
-  // ticker.add 要实现的
+  remove(el) {},
+  createText(type) {},
   parentNode(node) {},
   nextSibling(nide) {},
 });
