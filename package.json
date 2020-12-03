@@ -1,12 +1,20 @@
 {
   "name": "vue-ssd1306",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Vue Renderer for SSD1306 OLED chip on Raspberry Pi.",
   "main": "src/index.js",
   "scripts": {
     "serve": "rollup -c rollup.config.js --watch",
     "build": "rollup -c rollup.config.js"
   },
+  "keywords": [
+    "vue",
+    "oled",
+    "ssd1306",
+    "renderer",
+    "raspberry",
+    "pi"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webfansplz/vue-ssd1306.git"
