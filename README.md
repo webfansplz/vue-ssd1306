@@ -8,7 +8,7 @@ This project demonstrates how to:
 
 - Use Vue together with NodeJs on Raspberry Pi.
 - Build a custom renderer for Vue.
-- Node.js driver SSD1306 OLED on Raspberry Pi.
+- How does Node.js drive SSD1306 OLED on Raspberry Pi.
 
 ## Getting Started
 
