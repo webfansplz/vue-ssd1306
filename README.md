@@ -1,8 +1,10 @@
 # vue-ssd1306
 
-A Vue Renderer for SSD1306 OLED chip on Raspberry Pi
+![vue-ssd1306](https://s3.ax1x.com/2020/12/05/DL04dH.jpg)
 
 ## Introduction
+
+A Vue Renderer for SSD1306 OLED chip on Raspberry Pi
 
 This project demonstrates how to:
 
