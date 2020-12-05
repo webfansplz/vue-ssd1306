@@ -12,6 +12,8 @@ This project demonstrates how to:
 - Build a custom renderer for Vue.
 - How does Node.js drive SSD1306 OLED on Raspberry Pi.
 
+[Article Details](./Article.md)
+
 ## Getting Started
 
 This project only works on Raspberry Pi.
