@@ -34,4 +34,4 @@ npm run serve
 
 ## License
 
-MIT
+[MIT](./LICENSE)
