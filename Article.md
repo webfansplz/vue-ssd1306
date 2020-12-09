@@ -447,9 +447,9 @@ export function getContainer(oledIns) {
 
 ## 效果展示
 
-![vue-ssd1306](https://cdn.nlark.com/yuque/0/2020/gif/543189/1606922184841-e38d2571-b666-4992-8a2c-a453b45ea19e.gif)
+<!-- ![vue-ssd1306](https://cdn.nlark.com/yuque/0/2020/gif/543189/1606922184841-e38d2571-b666-4992-8a2c-a453b45ea19e.gif) -->
 
-<!-- ![vue-ssd1306](https://s8.gifyu.com/images/hello-vue-1.gif) -->
+![vue-ssd1306](./hello-vue.gif)
 
 ## 参考
 
